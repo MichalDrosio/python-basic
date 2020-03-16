@@ -98,8 +98,8 @@ def poker_hand():
     cards_5 = []
     while len(cards_5) != 5:
         card = random.choice(cards)
-        if card not in cards_5:
-            cards_5.append(card)
+            if cards_5.append(card):
+                cards_5.remove(card)
     return cards_5
 print(poker_hand())
 
