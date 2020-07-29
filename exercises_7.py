@@ -96,10 +96,12 @@ import random
 def poker_hand():
     cards = [v + ' of ' + c for v in _card_values for c in _card_colors]
     cards_5 = []
+
     while len(cards_5) != 5:
         card = random.choice(cards)
-        if card not in cards_5:
-            cards_5.append(card)
-    return cards_5
+        if cards_5.append(card):
+            cards_5.remove(card)
+
+
 print(poker_hand())
 

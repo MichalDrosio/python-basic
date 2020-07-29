@@ -5,7 +5,7 @@
 #
 #     zapyta o typowane liczby, przy okazji sprawdzi następujące warunki:
 #         czy wprowadzony ciąg znaków jest poprawną liczbą,
-#         czy użytkownik nie wpisał tej liczby już poprzednio,
+#         czy użytkownik nie wpisał tej liczby już poprzednio,byla
 #         czy liczba należy do zakresu 1-49,
 #     po wprowadzeniu 6 liczb, posortuje je rosnąco i wyświetli na ekranie,
 #     wylosuje 6 liczb z zakresu i wyświetli je na ekranie,
@@ -27,6 +27,8 @@ while len(player) != 6:
             if number not in player:
                 player.append(number)
                 x -= 1
+            elif number in player:
+                print('Liczba nie może się powtarzać, jeszcze raz.')
         else:
             print('Liczba poza zakresem')
     except ValueError:
