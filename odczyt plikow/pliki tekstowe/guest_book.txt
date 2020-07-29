@@ -1,0 +1,5 @@
+Michal
+{'michal': None}Ola
+{'michal': None, 'ola': None}Magda
+{'michal': None, 'ola': None, 'magda': None}Janek
+{'michal': None, 'ola': None, 'magda': None, 'janek': None}
