@@ -1,3 +1,5 @@
+import re
+
 def phone_number(selfphone):
     if len(selfphone) != 11:
         return False
@@ -19,3 +21,7 @@ for i in range(len(message)):
     c = message[i: i+11]
     if phone_number(c):
         print(f'znaleziono: {c} ')
+
+number = re.compile(r'\d{3}-\d{3}-\d{3}')
+my_num = number.search('nr tel 232-122-123')
+print(f'znaleziono {my_num.group()}')
