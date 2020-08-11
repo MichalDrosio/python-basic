@@ -1,7 +1,8 @@
 
 
 
-class User():
+class User:
+
     def __init__(self, name, surname, age, sex):
         self.name = name
         self.surname = surname
@@ -20,13 +21,17 @@ class User():
     def increment_login_attempts(self):
         self.login += 1
         print(f'zalogowano sie {self.login} razy')
+
     def reset_login_attempts(self):
         self.login = 0
         return f'resetowanie, aktualna wartosc:{self.login}'
 
+
 up=['dodac post', 'usunac post', 'banowac']
 
+
 class Admin(User):
+
     def __init__(self, name, surname, age, sex, privileges):
         self.privileges = privileges
         super(Admin, self).__init__(name, surname, age, sex)
@@ -35,6 +40,7 @@ class Admin(User):
         print(f'Administrator {self.name} {self.surname} może: ')
         for self.privilege in self.privileges:
             print(f'\t-{self.privilege}')
+
 
 user1 = User('michal', 'drosio', 33, 'm')
 user1.describe_user()

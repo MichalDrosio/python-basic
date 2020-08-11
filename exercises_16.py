@@ -10,6 +10,7 @@ def bin(a,b):
         if c % 2 != 0:
             binarna.append('1')
         c = (c / 2) - ((c % 2) / 2)
-        x = binarna[::-1]
+    x = binarna[::-1]
     return ''.join(x)
-print(bin(2,2))
+
+print(bin(10,10))
