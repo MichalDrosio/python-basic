@@ -14,4 +14,4 @@ def phone_number(selfphone):
             return False
     return selfphone
 
-print(phone_number('668-983-526'))
+print(phone_number())
