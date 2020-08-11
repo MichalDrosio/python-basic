@@ -14,3 +14,8 @@ def phone_number(selfphone):
             return False
     return selfphone
 
+message = 'Zadzwoń pod nr 234-123-232, 229-098-345 '
+for i in range(len(message)):
+    c = message[i: i+11]
+    if phone_number(c):
+        print(f'znaleziono: {c} ')
