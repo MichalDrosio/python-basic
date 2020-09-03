@@ -71,7 +71,7 @@ print(div(3,2))
 # disturbing
 def find_longest_word(array):
     a = array.split()
-    longest_word =''
+    longest_word = ''
     for word in a:
         if len(word) > len(longest_word):
             longest_word = word
@@ -101,7 +101,7 @@ def poker_hand():
         card = random.choice(cards)
         if cards_5.append(card):
             cards_5.remove(card)
-
+    return cards_5
 
 print(poker_hand())
 

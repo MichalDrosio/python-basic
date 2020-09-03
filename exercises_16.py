@@ -1,6 +1,8 @@
 # Konwersja liczby dziesietnej na binarną
+import unittest
 
-def bin(a,b):
+
+def bina(a, b):
     c = a + b
 
     binarna = []
@@ -11,6 +13,9 @@ def bin(a,b):
             binarna.append('1')
         c = (c / 2) - ((c % 2) / 2)
     x = binarna[::-1]
-    return ''.join(x)
+    return int(''.join(x))
 
-print(bin(10,10))
+
+class TestBinarna(unittest.TestCase):
+    def test_result(self):
+        self.assertEqual(bina(1, 6), 10)

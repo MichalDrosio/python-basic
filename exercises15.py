@@ -1,7 +1,7 @@
 user = 9
 
 
-for i in range( user):
+for i in range(user):
 
     for a in range(user-i):
         print(' ',end='')

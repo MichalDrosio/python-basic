@@ -1,5 +1,7 @@
+import unittest
 
 while True:
+
     def stawka_vat(vat):
         while vat != 23 and vat != 8 and vat != 5:
             try:
@@ -9,6 +11,7 @@ while True:
                 print('Podaj wartość liczbową')
         return vat
     vat = stawka_vat(vat='vat')
+
 
     def wartosc_netto(netto):
         while type(netto) != float or netto <= 0:
@@ -20,6 +23,7 @@ while True:
                 print('Podaj wartość liczbową')
         return netto
     netto = wartosc_netto(netto='netto')
+
 
     def obliczenia(netto, stawka_vat):
         brutto = netto + (netto * (stawka_vat / 100))
@@ -36,3 +40,5 @@ while True:
                 "Jeśli tak wpisz 't' ")
     if end == 't':
         break
+
+
