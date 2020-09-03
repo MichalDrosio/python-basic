@@ -1,6 +1,6 @@
 import unittest
 
-from a import generate_dictionary
+from generate_dictionary import generate_dictionary
 from compute_the_factorial_of_a_given_numbers import compute_the_factorial_of_a_given_numbers
 
 
