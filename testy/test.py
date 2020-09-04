@@ -2,7 +2,7 @@ import unittest
 
 from generate_dictionary import generate_dictionary
 from compute_the_factorial_of_a_given_numbers import compute_the_factorial_of_a_given_numbers
-
+from simple_calss import Example
 
 class TestNum(unittest.TestCase):
     def test_num(self):
