@@ -4,7 +4,7 @@
 import unittest
 
 array = {}
-
+a = 0
 def compute_the_factorial_of_a_given_numbers(num):
     r = 1
     try:
@@ -13,7 +13,6 @@ def compute_the_factorial_of_a_given_numbers(num):
             for index in range(1, num+1):
                 r *= index
             array[num] = r
-
         else:
             print('Dodatnia')
         return array

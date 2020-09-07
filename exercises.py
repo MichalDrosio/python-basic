@@ -14,5 +14,4 @@ a = ['q',1,2,'e',3]
 for x in a:
     if type(x) == int:
         print(x, end=',')
-print()
 

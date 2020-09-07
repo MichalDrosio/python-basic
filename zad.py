@@ -10,7 +10,7 @@ while True:
             except ValueError:
                 print('Podaj wartość liczbową')
         return vat
-    vat = stawka_vat(vat='vat')
+
 
 
     def wartosc_netto(netto):
@@ -22,20 +22,18 @@ while True:
             except ValueError:
                 print('Podaj wartość liczbową')
         return netto
-    netto = wartosc_netto(netto='netto')
 
 
     def obliczenia(netto, stawka_vat):
         brutto = netto + (netto * (stawka_vat / 100))
         return round(brutto, 2)
-    cena_brutto = obliczenia(netto=netto, stawka_vat=vat)
 
 
-    print(f'Cena brutto:{cena_brutto} zł, stawka vat {vat}%')
-    print(f'Cena netto: {netto} zł')
+    def print_result():
+        print(f'{obliczenia(netto=wartosc_netto(netto="netto"), stawka_vat=stawka_vat(vat="vat"))}')
 
 
-
+    print_result()
     end = input("Czy chcesz zakończyć działanie programu?\n"
                 "Jeśli tak wpisz 't' ")
     if end == 't':
