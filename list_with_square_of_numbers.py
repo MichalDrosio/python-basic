@@ -5,7 +5,7 @@ def list_with_square_of_numbers(numbers):
     array = []
     for index in range(1, numbers+1):
         array.append(index ** 2)
-    print(array[:5])
+    print(array[5:])
 
 
 list_with_square_of_numbers(20)
