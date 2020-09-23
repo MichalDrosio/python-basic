@@ -17,7 +17,7 @@ print()
 turn = 'X'
 for i in range(9):
     print_board(the_board)
-    print(f"Ruch gracza {turn}. W którym poku stawiasz znak")
+    print(f"Ruch gracza {turn}.Gdzie stawiasz znak")
     move = input()
     the_board[move] = turn
     if turn == 'X':
@@ -26,5 +26,5 @@ for i in range(9):
         turn = "X"
 
 
-print_board(the_board)
+print_board(board=the_board)
 
