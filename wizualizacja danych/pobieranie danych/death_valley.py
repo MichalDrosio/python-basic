@@ -1,5 +1,5 @@
 import csv
-from datetime import datetime
+from countdown import datetime
 from matplotlib import pyplot as plt
 
 filename = 'csv/death_valley_2014.csv'

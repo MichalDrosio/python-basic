@@ -1,6 +1,6 @@
 import csv
 from matplotlib import pyplot as plt
-from datetime import datetime
+from countdown import datetime
 
 
 filename = 'csv/sitka_weather_2014.csv'
