@@ -36,11 +36,7 @@ class Clock_12(Clock):
             super(Clock_12, self).__init__(seconds, minutes, hour, mode)
 
 
-# c24 = Clock_24(55, 59, 23, 24)
-# print(c24.show_clock())
-# print('---------------------------------------------------------')
-c12 = Clock_12(55, 59, 11, 12)
-print(c12.show_clock())
+
 
 
 
