@@ -7,12 +7,12 @@
 
 
 def odd_numbers(numbers):
-    numbers = input('Podaj liczby odzielone przecinkami:\n')
+
     return [index for index in numbers.split(',') if int(index) % 2 != 0]
 
 
 def print_num():
-    for i in odd_numbers(numbers='numbers'):
+    for i in odd_numbers('1,2,3,4,5,6'):
         print(i)
 
 
