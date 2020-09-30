@@ -9,8 +9,7 @@ def fib(num):
         return fib(num-1) + fib(num-2)
 
 
-print(fib(num=int(input('liczba'))))
-
+print(fib(6))
 
 print('------------------------')
 
@@ -30,7 +29,7 @@ def fib_iter1(n):  # definicja funkcji
         n -= 1
 
 
-print(fib_iter1(11))
+print(fib_iter1(6))
 print('----------------------------------------------')
 
 
@@ -41,8 +40,7 @@ def fib_iter2(n):
         Wersja iteracyjna z pętlą for.
     """
     a, b = 0, 1
-    print("wyraz", 1, a)
-    print("wyraz", 2, b)
+
     for i in range(1, n ):
         a, b = b, a + b
 
@@ -52,4 +50,4 @@ def fib_iter2(n):
     return b
 
 
-print(fib_iter2(10))
+print(fib_iter2(5))

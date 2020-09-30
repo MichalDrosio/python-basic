@@ -5,10 +5,17 @@ class Rectangle:
     def __init__(self, length, width):
         self.length = length
         self.width = width
+        self.results = []
 
     def compute_area(self):
-        return self.width * self.length
+        result = self.width * self.length
+        self.results.append(result)
+
+    def print_results(self):
+        for r in self.results:
+            print(r)
 
 
 rectangle = Rectangle(2, 2)
-print(rectangle.compute_area())
+rectangle.compute_area()
+rectangle.print_results()
