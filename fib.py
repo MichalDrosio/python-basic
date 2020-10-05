@@ -50,4 +50,4 @@ def fib_iter2(n):
     return b
 
 
-print(fib_iter2(5))
+print(fib_iter2(10))
