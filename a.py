@@ -10,10 +10,7 @@ class MathTools:
             if n % i == 0:
                 yield i
 
-
-
-c = MathTools
+c = MathTools()
 for i in c.prime_factors(21):
     print(i, end=',')
-
 
