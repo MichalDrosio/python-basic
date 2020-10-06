@@ -11,6 +11,6 @@ class MathTools:
                 yield i
 
 c = MathTools()
-for i in c.prime_factors(21):
+for i in c.prime_factors(30):
     print(i, end=',')
 

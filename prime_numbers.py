@@ -13,6 +13,6 @@ def gen_primary_number(num):
         if check_prime_number(i):
             yield i
 
-print(list(gen_primary_number(100)))
 
+print(list(gen_primary_number(100)))
 
