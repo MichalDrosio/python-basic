@@ -11,6 +11,7 @@ class Person:
     def name(self, name):
         return name
 
+
 class Male(Person):
     def __init__(self, sex):
         super(Male, self).__init__(sex)

@@ -11,4 +11,5 @@ def check_even_num(num):
     except ValueError:
         print(f'{num} is not a number')
 
-print(check_even_num(9))
+
+print(check_even_num(num=input()))

@@ -15,6 +15,7 @@ class Die():
         self.sides = sides
         self.roll = roll
         self.suma = 0
+
     def roll_die(self):
         oczka = randint(1,self.sides)
         print(oczka)
@@ -23,5 +24,5 @@ class Die():
             print(f'{i+1}:kostka o liczbie scianek {self.sides} wyrzucono {oczka} oczka')
             self.suma += oczka
         print(f'laczna suma oczek to {self.suma}')
-d =Die(roll=2)
+d =Die(roll=6)
 d.roll_die()

@@ -12,7 +12,6 @@ import math
 
 
 def check_values(d):
-    d = input('Podja wartości liczbowe oddzielone przecinkami:\n')
     D = d.split(',')
     array = []
     try:
@@ -28,7 +27,7 @@ def calculate():
     c = 50
     h = 30
     array = []
-    for d in check_values(d='d'):
+    for d in check_values(d=input('Podja wartości liczbowe oddzielone przecinkami:\n')):
         q = round(math.sqrt((2 * c * d)/h))
         array.append(q)
     return array
