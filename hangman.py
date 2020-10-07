@@ -13,7 +13,7 @@ def hangman():
             if i in guess_made:
                 hero_name += i
             else:
-                hero_name = hero_name + "_" + ""
+                hero_name = hero_name + " " + ""
         if hero_name == avengers:
             print(hero_name)
             print('Wygrales')
