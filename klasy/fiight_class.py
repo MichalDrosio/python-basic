@@ -1,6 +1,7 @@
 import random
 from time import sleep
 
+
 class Warrior:
     def __init__(self, kind='', hp=0, strength=0, defence=0):
         self.kind = kind
@@ -27,7 +28,6 @@ class Warrior:
 
     def __str__(self):
         return self.kind
-
 
 
 def fight(warlock, knight):
