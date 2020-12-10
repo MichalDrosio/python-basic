@@ -1,38 +1,38 @@
-# def stock_info(company, country, price, currency):
-#     return f"company:{company}\ncountry:{country}\nprice:{price}\ncurrency:{currency}"
-#
-# print(stock_info.__code__.co_varnames)
-#
-#
-# array = [-4, 3, 2]
-#
-# import builtins
-# help(builtins.sum)
-# print(builtins.sum(array))
-#
-#
-# counter = 1
-#
-#
-# def update_counter():
-#     global counter
-#     counter += 1
-#     print(counter)
-#
-# update_counter()
-#
-#
-# counter_2 = 0
-# dot_counter = ''
-#
-# def update_counter_2():
-#     global counter_2, dot_counter
-#     counter_2 += 1
-#     dot_counter += '.'
-#
-#
-# [update_counter_2() for i in range(40)]
-# print(counter_2, dot_counter)
+def stock_info(company, country, price, currency):
+    return f"company:{company}\ncountry:{country}\nprice:{price}\ncurrency:{currency}"
+
+print(stock_info.__code__.co_varnames)
+
+
+array = [-4, 3, 2]
+
+import builtins
+help(builtins.sum)
+print(builtins.sum(array))
+
+
+counter = 1
+
+
+def update_counter():
+    global counter
+    counter += 1
+    print(counter)
+
+update_counter()
+
+
+counter_2 = 0
+dot_counter = ''
+
+def update_counter_2():
+    global counter_2, dot_counter
+    counter_2 += 1
+    dot_counter += '.'
+
+
+[update_counter_2() for i in range(40)]
+print(counter_2, dot_counter)
 
 
 def display_info(number_of_updates=1):
