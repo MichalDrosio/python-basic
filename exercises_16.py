@@ -9,7 +9,7 @@ def bina(a, b):
     while c > 0:
         if c % 2 == 0:
             binarna.append('0')
-        if c % 2 != 0:
+        else:
             binarna.append('1')
         c = (c / 2) - ((c % 2) / 2)
     x = binarna[::-1]
