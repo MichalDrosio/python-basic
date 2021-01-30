@@ -23,3 +23,7 @@ def accum2(s):
     return '-'.join([c.upper() + c.lower() * i for i, c in enumerate(s)])
 
 print(accum2('abcd'))
+
+
+def accum3(s):
+    return '-'.join((a * i).title() for i, a in enumerate(s, 1))
