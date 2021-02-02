@@ -32,15 +32,19 @@
 #
 # gap(6,100,110) --> nil or {0, 0} or ... : between 100 and 110 we have 101, 103, 107, 109 but 101-107is
 # not a 6-gap because there is 103in between and 103-109is not a 6-gap because there is 107in between.
-def is_prime(n):
-    if n <= 0 or n == 1:
-        return False
-    i = 2
-    while i <= n ** 0.5:
-        if n % i == 0:
+def is_prime(number):
+    for i in range(2, int(number * 0.5)):
+        if number % i == 0:
             return False
-        i += 1
     return True
+    # if n <= 0 or n == 1:
+    #     return False
+    # i = 2
+    # while i <= n ** 0.5:
+    #     if n % i == 0:
+    #         return False
+    #     i += 1
+    # return True
 
 
 def gap(g, m, n):
