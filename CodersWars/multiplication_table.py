@@ -11,4 +11,19 @@ def multiplication_table(size):
             list.append(index*i)
         array.append(list)
     return array
-print(multiplication_table(3))
+
+
+print(multiplication_table(2))
+
+
+def multiplication_table_2(rows, column):
+    array = []
+    for i in range(1, column+1):
+        result = []
+        for j in range(1, rows+1):
+            result.append(i*j)
+        array.append(result)
+    return array
+
+
+print(multiplication_table_2(4, 4))
