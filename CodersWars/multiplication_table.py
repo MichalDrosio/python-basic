@@ -26,4 +26,4 @@ def multiplication_table_2(rows, column):
     return array
 
 
-print(multiplication_table_2(4, 4))
+print(multiplication_table_2(3, 3))
