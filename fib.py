@@ -40,14 +40,14 @@ def fib_iter2(n):
         Wersja iteracyjna z pętlą for.
     """
     a, b = 0, 1
-
-    for i in range(1, n ):
+    r = [0, 1]
+    for i in range(1, n):
         a, b = b, a + b
-
+        r.append(b)
         print("wyraz", i + 2, b)
 
     print()  # wiersz odstępu
-    return b
+    return r
 
 
 print(fib_iter2(10))

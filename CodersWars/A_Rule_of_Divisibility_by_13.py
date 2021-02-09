@@ -2,26 +2,38 @@ def digit_num(num):
     return (10**int(num))%13
 
 
-n = 1234567
-
-
-
+n = 5634
 
 
 def thirt(n):
-    s = str(n)
-    str_n = s[::-1]
+
+    str_n = str(n)
+    str_n = str_n[::-1]
     result = 0
-    for index in range(len(str_n)):
-        x = digit_num(index)
-        number = int(str_n[index]) * x
-        result += number
+    while n != result:
+        print(f'n:{n}|||||||result:{result}')
+        for index in range(len(str_n)):
+            x = digit_num(index)
+            number = int(str_n[index]) * x
+            result += number
+        n = result
 
     return result
 
 
 
+
+
+
 print(thirt(n))
+
+
+
+
+
+
+
+
 
 
 
