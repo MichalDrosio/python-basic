@@ -2,6 +2,7 @@ def transpose(array):
     width = len(array[0])
     result = []
     for items in range(width):
+        print(items)
         pair = []
         for item in array:
             print(f'item:{item[items]} add to items:{items}')
