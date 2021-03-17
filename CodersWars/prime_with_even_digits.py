@@ -25,14 +25,6 @@ def prime_digit(num):
     return True
 
 
-# def quantity_even_num(n):
-#     count = 0
-#     for i in str(n):
-#         if int(i) % 2 == 0:
-#             count += 1
-#     return count
-
-
 
 def high_prime_digit(number):
     max_even = 0
