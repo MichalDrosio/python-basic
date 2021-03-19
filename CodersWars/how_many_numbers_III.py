@@ -49,10 +49,24 @@ from itertools import combinations_with_replacement
 def find_all2(sum_dig, digs):
     combs = combinations_with_replacement(list(range(1, 10)), digs)
     target = [''.join(str (x) for x in list(comb)) for comb in combs if sum(comb) == sum_dig]
-    print(target)
     if not target:
         return []
     return [len(target), int(target[0]), int(target[-1])]
 
 print(find_all2(10, 3))
+
+
+def combs(a):
+    if len(a) == 0:
+        return [[]]
+    cs = []
+    for c in combs(a[1:]):
+        z = [c, c+[a[0]]]
+        cs += z
+
+    return cs
+
+print(combs([1,2,3,4,5]))
+
+
 
