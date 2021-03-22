@@ -30,7 +30,7 @@ def sum_pairs(ints, s):
     z = []
     len_ints = ints
     for i in range(len(ints)):
-        for j in range(len(ints)):
+        for j in range(len(ints[i:])):
             if i != j:
                 if ints[i] + ints[j] == s:
                     if i + j == s:
@@ -52,7 +52,7 @@ def sum_pairs(ints, s):
 array1 = [1, 4, 8, 7, 3, 15]
 array2 = [1, -2, 3, 0, -6, 1]
 array3 = [20, -13, 40]
-array4 = [1, 2, 3, 4, 1, 0]
+
 array5 = [10, 5, 2, 3, 7, 5]
 array6 = [4, -2, 3, 3, 4]
 array7 = [0, 2, 0]
@@ -83,4 +83,3 @@ array8 = [5, 9, 13, -3]
 # print(sum_pairs2(array6, 8))
 # print(sum_pairs2(array7, 0))
 # print(sum_pairs2(array8, 10))
-
