@@ -13,3 +13,21 @@ def switcher(arr):
 print(switcher(['24', '12', '23', '22','0', '4', '26', '9', '8',]))
 print(switcher(['25','7','8','0','4','14','23','8','25','23','29','16','16','4']))
 
+print('============================================')
+lista = [1,3,5,7]
+from functools import reduce
+print(f"Nasza lista: {lista}\n")
+print(f"Przykład zastosowania map: {list( map(lambda x: x*2, lista) )}")
+print(f"Przykład zastosowania filter: {list( filter(lambda x: x>3, lista) )}")
+print(f"Przykład zastosowania reduce: { reduce(lambda x,y: x+y, lista) }")
+
+print('================================')
+matrix = [[1, 2, 3], [1, 2, 3]]
+matrix_T = [list(i) for i in zip(*matrix)]
+print(matrix_T)
+m1 = [1,2,3]
+m2 = [4,5,6]
+m = [[l, z] for l, z in zip(m1, m2)]
+x = zip(m1, m2)
+print(m)
+print(list(x))
