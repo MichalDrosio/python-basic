@@ -19,20 +19,20 @@ def square(num):
 
 def comp(array_1, array_2):
     result = []
-    for i in sorted(array_1):
+    for i in (array_1):
         result.append(square(i))
-    return result == sorted(array_2)
+    return result == array_2
 
 
 
 
 
 
-# a = [121, 144, 19, 161, 19, 144, 19, 11]
-# b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
-# print(comp(a, b))
+a = [121, 144, 19, 161, 19, 144, 19, 11]
+b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
+print(comp(a, b))
 
-x = [121, 144, 19, 161, 19, 144, 19, 11]
-y = [11*11, 121*121, 144*144, 190*190, 161*161, 19*19, 144*144, 19*19]
-print(comp(x, y))
-print(y)
+# x = [121, 144, 19, 161, 19, 144, 19, 11]
+# y = [11*11, 121*121, 144*144, 190*190, 161*161, 19*19, 144*144, 19*19]
+# print(comp(x, y))
+# print(y)
