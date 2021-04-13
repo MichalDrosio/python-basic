@@ -13,7 +13,7 @@
 from random import randint
 lotto = []
 while len(lotto) != 6:
-    digit = randint(1,49)
+    digit = randint(1, 49)
     if digit not in lotto:
         lotto.append(digit)
 

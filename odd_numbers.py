@@ -12,7 +12,7 @@ def odd_numbers(numbers):
 
 
 def print_num():
-    for i in odd_numbers('1,2,3,4,5,6'):
+    for i in odd_numbers('1,2,3,4,5,6,7,8,9'):
         print(i)
 
 

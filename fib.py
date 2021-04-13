@@ -22,14 +22,13 @@ def fib_iter1(n):  # definicja funkcji
     """
     pwyrazy = (0, 1)  # dwa pierwsze wyrazy ciągu zapisane w tupli
     a, b = pwyrazy  # przypisanie wielokrotne, rozpakowanie tupli
-    print(a, end=" ")
+    print(a, b)
     while n > 1:
-        print (b, end=" ")
         a, b = b, a + b  # przypisanie wielokrotne
         n -= 1
+    return a
 
-
-print(fib_iter1(6))
+print(fib_iter1(10))
 print('----------------------------------------------')
 
 
@@ -43,11 +42,11 @@ def fib_iter2(n):
     r = [0, 1]
     for i in range(1, n):
         a, b = b, a + b
-        r.append(b)
-        print("wyraz", i + 2, b)
+        # r.append(b)
+        # print("wyraz", i + 2, b)
 
     print()  # wiersz odstępu
-    return r
+    return a
 
 
 print(fib_iter2(10))

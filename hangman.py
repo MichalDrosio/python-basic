@@ -6,7 +6,7 @@ def hangman():
                             'hawkeye', 'war machine', 'black panter'])
     attempts = 10
     guess_made = ''
-    print(avengers)
+
     while len(avengers) > 0:
         hero_name = ""
         for i in avengers:

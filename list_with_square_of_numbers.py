@@ -8,4 +8,7 @@ def list_with_square_of_numbers(numbers):
     return array
 
 
-list_with_square_of_numbers(4)
+print(list_with_square_of_numbers(4))
+
+a = [i**2 for i in range(1, 5)]
+print(a)
