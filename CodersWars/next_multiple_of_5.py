@@ -20,6 +20,7 @@
 
 def next_multiple_of_five(n):
     mod5 = n % 5
+    add = ''
     if n == 0:
         return 5
     elif mod5 == 0:
