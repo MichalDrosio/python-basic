@@ -1,3 +1,6 @@
+import random
+
+
 def bubble_sort(array):
     shift = True
     i = 0
@@ -13,6 +16,3 @@ def bubble_sort(array):
         print(array)
 
 
-a = [10, 8, 2, 1, 9, 5, 11, 12, 13, 7]
-print(a)
-print(bubble_sort(a))
