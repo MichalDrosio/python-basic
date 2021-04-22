@@ -7,6 +7,7 @@ import string
 
 def switcher(arr):
     az = string.ascii_lowercase[::-1] + '!? '
+    print(az)
     return ''.join(az[int(x)-1] for x in arr if int(x) > 0)
 
 
