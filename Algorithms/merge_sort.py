@@ -10,7 +10,7 @@ def merge_sort(array):
         i = 0
         j = 0
         k = 0
-
+        print(f'i:{i}-p1:{len(part_1)}({part_1}), j:{j}-p2:{len(part_2)}({part_2})')
         while i < len(part_1) and j < len(part_2):
             if part_1[i] < part_2[j]:
                 array[k] = part_1[i]
@@ -34,3 +34,5 @@ def merge_sort(array):
 
 array = [1, 3, 2, 6, 4, 10, 9, 7, 8, 11, 0]
 print(merge_sort(array))
+
+

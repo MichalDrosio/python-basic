@@ -8,6 +8,7 @@ def insertion_sort(array):
             print(f'{j}>=0 and {key}<{array[j]}')
             print(f'array[j+i]=array[j]|{array[j + 1]} zaminiamy z {array[j]}')
             array[j+1] = array[j]
+            print(array)
             j -= 1
         array[j+1] = key
         print(f'array[j+1] = key|{array[j+1]}={key}')

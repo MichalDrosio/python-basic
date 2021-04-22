@@ -16,3 +16,13 @@ def bubble_sort(array):
         print(array)
 
 
+z = []
+j = 0
+while j < 5:
+    x = random.randint(1, 100)
+    if x not in z:
+        z.append(x)
+        j += 1
+print('start', z)
+
+print(bubble_sort(z))
