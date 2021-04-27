@@ -45,17 +45,29 @@
 import re
 
 
-def nba_cup(result_sheet, to_find):
-    t = result_sheet.split(',')
-    res = []
+def nba_cup(result_sheet, team):
+    if not team: return ""
 
+    wins, draws, losses, points, conced = 0, 0, 0, 0, 0
+    for t1, p1, t2, p2 in re.findall(r'(.+?) (\b[\d.]+\b) (.+?) (\b[\d.]+\b)(?:,|$)', result_sheet):
 
-    z = re.findall(r'(.+?) (\b[\d.]+\b) (.+?) (\b[\d.]+\b)(?:,|$)', result_sheet)
-    print(z)
-    for i in z:
-        print(i)
+        if '.' in p1 or '.' in p2: return "Error(float number):{} {} {} {}".format(t1, p1, t2, p2)
 
+        if team == t1 or team == t2:
+            ptsTeam, ptsOther = map(int, (p1, p2) if t1 == team else (p2, p1))
+            points += ptsTeam
+            conced += ptsOther
+            if ptsTeam == ptsOther:
+                draws += 1
+            elif ptsTeam < ptsOther:
+                losses += 1
+            else:
+                wins += 1
 
+    overAllScore = 3 * wins + draws
+    return ("{}:This team didn't play!" if not points and not losses else
+            "{}:W={};D={};L={};Scored={};Conceded={};Points={}").format(team, wins, draws, losses, points, conced,
+                                                                        overAllScore)
 
 
 
@@ -85,4 +97,4 @@ teams = ("Los Angeles Clippers,Dallas Mavericks,New York Knicks,NYK,Atlanta Hawk
              "Detroit Pistons,Utah Jazz,Miami Heat,Charlotte Hornets,Toronto Raptors,Orlando Magic,Washington Wizards,"
              "Golden State Warriors,Dallas Maver")
 
-print(nba_cup(r, 'Los Angeles Clipepers'))
+print(nba_cup(r, 'Los Angeles Clippers'))
