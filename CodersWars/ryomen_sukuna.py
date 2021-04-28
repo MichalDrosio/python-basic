@@ -14,6 +14,7 @@
 #
 # Optimize your solution for n as large as 1010.
 
+
 def sukuna(n):
     res = []
     i = 2
