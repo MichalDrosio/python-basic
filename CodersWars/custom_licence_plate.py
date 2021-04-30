@@ -31,3 +31,4 @@ def licence_plate(s):
     return plate if len(plate) > 1 and not plate.isdigit() else 'not possible'
 
 print(licence_plate('12sada321ada'))
+
