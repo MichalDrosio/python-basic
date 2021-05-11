@@ -22,7 +22,6 @@ def solution(stones):
     i = 0
     c = 0
     while i < len(stones)-1:
-        print(stones[i], stones[i+1])
         if stones[i] == stones[i+1]:
             c += 1
         i += 1
