@@ -16,6 +16,3 @@ def calculate(s):
 
 
 
-
-
-
