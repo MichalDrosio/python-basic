@@ -20,3 +20,6 @@ def multi_table(number):
     return result
 
 print(multi_table(5))
+
+time = 6
+print(time //2)
