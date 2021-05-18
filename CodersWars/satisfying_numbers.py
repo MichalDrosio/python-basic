@@ -10,5 +10,5 @@ def smallest(n):
             x += y
     return x
 
-print(smallest(10))
+print(smallest(7))
 
