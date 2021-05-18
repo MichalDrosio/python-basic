@@ -15,11 +15,12 @@ def move_ten(word):
             new_word += letters[new_letter]
         else:
             new_letter = new_letter - 26
+            print(new_letter)
             new_word += letters[new_letter]
     return new_word
 
 
-print(move_ten('exp'))
+print(move_ten('axyz'))
 
 from string import ascii_lowercase as al
 
@@ -27,4 +28,4 @@ tbl = str.maketrans(al, al[10:] + al[:10])
 def move_ten2(st):
     return st.translate(tbl)
 
-print(move_ten2('exp'))
+print(move_ten2('xyz'))
