@@ -27,6 +27,7 @@ def camelize(str_):
 # print(camelize("cODE warS"))
 # print(camelize('tVU77TBewGcg2csB'))
 # print(camelize("'Quoted'=>'What'"))
-print(camelize('Rugby:Club:2013'))
+# print(camelize('Rugby:Club:2013'))
 # print(camelize('Arabian_String-Test'))
 # print(camelize('Ninja-Test--01'))
+
