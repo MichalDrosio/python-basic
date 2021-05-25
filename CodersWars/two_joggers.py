@@ -29,10 +29,12 @@
 # nbr_of_laps(4, 6) # returns (3, 2)
 
 def nbr_of_laps(x, y):
-    for i in range(min(x, y), 0, -1):
-        if x % i == 0 and y % i == i:
+    min_num = min(x, y)
+    print(min_num)
+    for i in range(min_num, 0, -1):
+        if x % i == 0 and y % i == 0:
             break
     return (y / i, x / i)
 
 
-print(nbr_of_laps(5, 3))
+print(nbr_of_laps(4, 6))
