@@ -1,7 +1,7 @@
 # Write a function which takes a input string s and return a string in the following way:
 
 def sort_vowels(s):
-    vowels = ('a', 'e', 'i', 'o', 'E', 'A', 'I', 'O')
+    vowels = ('a', 'e', 'i', 'o', 'E', 'A', 'I', 'O', 'u', 'U')
     i = 0
     result = ''
     while i < len(s):
@@ -11,7 +11,7 @@ def sort_vowels(s):
         else:
             result += f'|{s[i]}\n'
             i += 1
-    return result
+    return result.rstrip()
 
 
 print(sort_vowels('Codewars'))
