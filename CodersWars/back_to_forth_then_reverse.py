@@ -42,6 +42,11 @@ def arrange(s):
 
 
 S = [2, 4, 3, 4]
-c = int(len(S)/2)
-print(S[c])
+
 print(arrange(S))
+
+def v(p):
+    p = p[::-1]
+    print([len(p)//2])
+
+print(v([2,4,3,4]))
