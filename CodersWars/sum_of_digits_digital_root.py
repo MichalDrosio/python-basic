@@ -20,3 +20,6 @@ def digital_root(n):
     return n
 
 print(digital_root(173))
+
+z = 140
+print(list(map(int,str(z))))
