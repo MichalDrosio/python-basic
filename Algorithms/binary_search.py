@@ -24,10 +24,8 @@ def binary_search(number, array):
 
 
 array = [1, 2, 3, 4, 5, 67, 45, 89, 100, 111, 123, 134, 135, 136, 137, 140, 141, 142, 143, 145, 146]
-# print(binary_search(array=array, number=5))
-# print(binary_search(array=array, number=89))
-# print(binary_search(array=array, number=100))
-# print(binary_search(array=array, number=1))
+
+
 print(binary_search(array=array, number=100))
 
 
